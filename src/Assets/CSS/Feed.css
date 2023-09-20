@@ -1,0 +1,17 @@
+.feed{
+    background-color: rgb(255, 255, 246);
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.feed::-webkit-scrollbar{
+    display: none;
+}
+
+@media screen and (max-width: 900px){
+    .feed{
+        width: 100%;
+        height: 100vh;
+    }
+}
