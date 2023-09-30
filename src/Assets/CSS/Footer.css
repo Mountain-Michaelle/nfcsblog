@@ -1,0 +1,33 @@
+.footer{
+    background-color: rgb(14, 0, 14);
+    color: white;
+}
+.footer__cont{
+    width: 97%;
+    margin: 0.1rem auto;
+}
+
+.footer__cont ul{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    flex: 1;
+    justify-content: space-between;
+    color: grey;
+    padding: .5rem;
+
+}
+.footer__cont ul li{
+    font-size: 1rem;
+    font-weight: 500;
+    list-style: none;
+}
+.footer__cont2{
+    display: flex;
+    flex-direction: row;
+    gap: .2rem;
+    flex: 1;
+    justify-content: space-between;
+    color: rgb(234, 206, 243);
+    padding: .5rem;
+}

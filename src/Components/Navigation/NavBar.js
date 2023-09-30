@@ -7,8 +7,6 @@ import DensitySmallSharpIcon from '@mui/icons-material/DensitySmallSharp';
 
 
 
-
-
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const handleClickOutSide = () => {setIsOpen(false)}
@@ -71,9 +69,11 @@ const NavBar = () => {
                             }) 
                         }
                             </ul>
+                            <div className='off' onClick={handleClickOutSide} ></div>
                         </div> 
                     )
                 }
+                
         </nav>
     )
 }

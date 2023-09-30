@@ -1,0 +1,38 @@
+.slide__text{
+    position: absolute;
+    color: rgb(255, 255, 255) !important;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: 1rem;
+    width: 80%;
+    text-align: center;
+    margin-top: 1rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: .2rem;
+    border-radius: 0 2rem 2rem 0;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+    .slide__text{
+        width: 50%;
+        padding: .2rem;
+        font-size: .8rem;
+        font-weight: 600;
+        margin-left: .5rem;
+        text-align: left;
+        line-height: 1rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .slide__text{
+        background: none;
+        letter-spacing: .2rem;
+        line-height: .7rem;
+        margin-left: 1rem;
+    }
+}

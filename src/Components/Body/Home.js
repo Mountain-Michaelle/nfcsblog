@@ -4,8 +4,8 @@ import PostMasonry from './moment/PostMasonry';
 import PostMasonry2 from './moment/PostMasonry2';
 import trending from '../Data/trending';
 import featured from '../Data/featured';
-
-
+import Gallery from './NFCSGallery/Gallery';
+import Footer from '../Footer/Footer';
 
 const featuredConfig = {
  0: {
@@ -36,7 +36,13 @@ const mergeStyle = function (posts, config){
 mergeStyle(trending, trendingConfig)
 mergeStyle(featured, featuredConfig)
 
+
 function Home() {
+const bg = {
+    backgroundColor: 'red',
+}
+    const windowWidth = window.innerWidth 
+    const pixel = 2;
     console.log("single home post ", lastFeatured)
     return(
         <section className='container home' style={{}}>
@@ -51,6 +57,11 @@ function Home() {
 
                 <h2>Trending Posts</h2>
                 <PostMasonry posts={trending} columns={3} />
+
+            <h2 className="nfcs__gallery" style={{marginBottom: '2rem', textAlign:'center'}}>NFCS Gallery</h2>
+            <section className='nfcs__gallery'>
+                <Gallery  background={bg} windowWidth={windowWidth} pixel={pixel} trend={trending} />
+            </section>
             </div>
         </section>
         )

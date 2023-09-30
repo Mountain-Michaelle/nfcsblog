@@ -1,8 +1,8 @@
 .App {
-  width: 100%;
+  width: 100% !important;
   height: 100vh;
-  margin: 0;
-  padding: 0;
+  overflow: auto;
+
 }
 
 body{
@@ -10,6 +10,8 @@ body{
   --nfcs-bg:  rgb(255, 243, 248);
   --nfcs-txt: rgb(24, 18, 24);
   --nfcs-link: rgb(215, 7, 223);
+  --nfcs-light-bg: rgb(255, 255, 246);
+  background-color: var(--nfcs-light-bg);
 }
 .App-logo {
   height: 40vmin;

@@ -3,11 +3,11 @@ import '../../Assets/CSS/Feed.css';
 import NavBar from '../Navigation/NavBar';
 import Home from './Home';
 
-function Feed() {
+function Feed({navLink}) {
   return (
     
     <div className="feed">
-        <Home />
+        <Home navLink={navLink} />
     </div>
   )
 }

@@ -20,7 +20,7 @@
 }
 
 .post__text, .tags__container, .post__data, div{
-    /* float: left; */
+    
     z-index: 10;
     font-weight: 300;
 }

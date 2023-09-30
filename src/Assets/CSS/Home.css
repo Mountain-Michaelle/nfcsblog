@@ -11,6 +11,13 @@
 .featured__post{
 }
 
+.nfcs__gallery{
+    text-transform: uppercase;
+    color: rgb(224, 0, 49) !important;
+    font-family:cursive;
+    letter-spacing: 1rem;
+}
+
 @media screen and (max-width: 900px){
     .featured__post{
         display: flex;
@@ -20,5 +27,9 @@
         margin: auto;
         grid: 20px;
         object-fit: contain;
+    }
+    .nfcs__gallery{
+        font-size: 1rem;
+        letter-spacing: .4rem;
     }
 }
