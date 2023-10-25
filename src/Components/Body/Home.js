@@ -56,7 +56,7 @@ const bg = {
                 </section>
 
                 <h2>Trending Posts</h2>
-                <PostMasonry posts={trending} columns={3} />
+                <PostMasonry posts={featured} columns={3} />
 
             <h2 className="nfcs__gallery" style={{marginBottom: '2rem', textAlign:'center'}}>NFCS Gallery</h2>
             <section className='nfcs__gallery'>

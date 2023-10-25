@@ -2,8 +2,8 @@ import React from 'react';
 import img1 from '../../Assets/Images/ChristDeKing.jpg'
 import img2 from '../../Assets/Images/pis2.jfif';
 import img3 from '../../Assets/Images/students.jpeg';
-import img4 from '../../Assets/Images/range.jpg'
-import img5 from '../../Assets/Images/mario.jpg'
+import img4 from '../../Assets/Images/NFCS3.jpg'
+import img5 from '../../Assets/Images/NFCS2.png'
 
 export default [
     {
@@ -25,7 +25,7 @@ export default [
         categories: ["YCS ", "Alumni"]
     },
     {
-        title: 'NFCS Registration',
+        title: 'Glorious Voice Choir IMT',
         date: '30th December',
         image: img4,
         categories: ["YCS ", "Alumni"]

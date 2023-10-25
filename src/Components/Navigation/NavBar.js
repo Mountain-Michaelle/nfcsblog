@@ -31,7 +31,7 @@ const NavBar = () => {
 ]
     return(
         <nav className='navigation'>
-            <span>St. Augustine Chaplaincy IMT</span>
+          <Link to="./"><h2>St. Augustine Chaplaincy IMT</h2></Link>  
             <div className='navLinks'>
                 <ul>
                     {
