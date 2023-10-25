@@ -1,5 +1,5 @@
 .footer{
-    background-color: rgb(14, 0, 14);
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 .footer__cont{
@@ -13,7 +13,7 @@
     gap: .5rem;
     flex: 1;
     justify-content: space-between;
-    color: grey;
+    color: rgb(255, 255, 255);
     padding: .5rem;
 
 }

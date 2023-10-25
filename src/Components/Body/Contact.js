@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import trending from '../Data/trending';
 import featured from '../Data/featured';
 import { Button } from '@mui/material';
@@ -7,10 +7,45 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import EmailIcon from '@mui/icons-material/Email';
 import SettingsPhoneIcon from '@mui/icons-material/SettingsPhone';
+import { deepOrange } from '@mui/material/colors';
 
 const lastImage = trending.slice(-1)[0];
 
 const About = () => {
+// Handlel copies
+    const [copy, setCopied] = useState(false)
+    const [copy1, setCopied1] = useState(false)
+    const [copy2, setCopied2] = useState(false)
+// Ends here
+
+// number contacts
+    const number = "+2349156084052"
+    const number1 = "08090743834"
+    const contact = [
+        {number: "+2349156084052"},
+        {number2: "08090743834"}
+    ]
+// ends here 
+
+// Event handlers (onclick one) starts here 
+    const handleCopy = (num) => {
+       navigator.clipboard.writeText(num)
+       setCopied(true);
+       setTimeout(() => setCopied(false), 1500);
+    }
+    const handleCopy1 = (num) => {
+        navigator.clipboard.writeText(num)
+        setCopied1(true);
+        setTimeout(() => setCopied1(false), 1500);
+     }
+     const handleCopy2 = (num) => {
+        navigator.clipboard.writeText(num)
+        setCopied(true);
+        setTimeout(() => (setCopied2(false)), 1500);
+     }
+
+// Ends event handlers heres.
+
     const bg = {
         backgroundColor: 'rgba(25, 0, 31, 0.853)',
         color: 'red',
@@ -27,8 +62,8 @@ const About = () => {
              There are no commercial interests in this study, the findings 
                </p>
                 <div className='contact_cont'>
-                    <div className='contacts'><SettingsPhoneIcon /><code className='cont__num'> +2349156084052</code> <button>copy</button></div> 
-                    <div className='contacts'><SettingsPhoneIcon /><code className='cont__num'> +2349156084052</code> <button>copy</button></div> 
+                    <div className='contacts'><SettingsPhoneIcon /><code className='cont__num'>{" "} {number} </code> <button onClick={ (e) => handleCopy(number)}>copy</button> <span style={{marginLeft: "1rem", fontWeight:"600", color: "purple"} }>{ copy && "copied!"}</span></div> 
+                    <div className='contacts'><SettingsPhoneIcon /><code className='cont__num'>{" "} {number1} </code> <button onClick={ (e) => handleCopy1(number1)}>copy</button> <span style={{marginLeft: "1rem", fontWeight:"600", color: "purple"} }>{copy1 && "copied!"}</span></div> 
                     <div className='contacts'><EmailIcon /><code className='cont__num'>staugustine.com</code> <button>copy</button></div> 
                 </div>
               

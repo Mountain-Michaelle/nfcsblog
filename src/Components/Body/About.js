@@ -4,6 +4,8 @@ import featured from '../Data/featured';
 import { Button } from '@mui/material';
 import '../../Assets/CSS/AboutUs.css';
 import Gallery from './NFCSGallery/Gallery';
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+import CreditCardIcon from '@mui/icons-material/CreditCard';
 
 const lastImage = trending.slice(-1)[0];
 
