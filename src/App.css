@@ -1,8 +1,11 @@
 .App {
   width: 100% !important;
   height: 100vh;
-  overflow: auto;
 
+}
+
+.App::-webkit-scrollbar{
+  display: none;
 }
 
 body{

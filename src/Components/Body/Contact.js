@@ -62,7 +62,7 @@ const About = () => {
              There are no commercial interests in this study, the findings 
                </p>
                 <div className='contact_cont'>
-                    <div className='contacts'><SettingsPhoneIcon /><code className='cont__num'>{" "} {number} </code> <button onClick={ (e) => handleCopy(number)}>copy</button> <span style={{marginLeft: "1rem", fontWeight:"600", color: "purple"} }>{ copy && "copied!"}</span></div> 
+                    <div className='contacts'><SettingsPhoneIcon /><code className='cont__num'>{" "} {number} </code> <button onClick={ (e) => handleCopy(number)}>copy</button> <span className='copied' style={{marginLeft: "1rem", fontWeight:"600", color: "purple"} }>{ copy && "copied!"}</span></div> 
                     <div className='contacts'><SettingsPhoneIcon /><code className='cont__num'>{" "} {number1} </code> <button onClick={ (e) => handleCopy1(number1)}>copy</button> <span style={{marginLeft: "1rem", fontWeight:"600", color: "purple"} }>{copy1 && "copied!"}</span></div> 
                     <div className='contacts'><EmailIcon /><code className='cont__num'>staugustine.com</code> <button>copy</button></div> 
                 </div>

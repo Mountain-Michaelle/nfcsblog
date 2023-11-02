@@ -1,6 +1,5 @@
 .navigation{
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
     position: sticky;
@@ -24,7 +23,7 @@
     width: 100%;
     height: 100vh;
     z-index: -100;
-    background-color: rgba(255, 255, 255, 0.507);
+    background-color: rgba(255, 255, 255, 0.089);
 
 }
 .navigation span{
@@ -70,7 +69,7 @@
 
 @media screen and (max-width: 700px){
     .navigation a {
-        font-size: .7rem;
+        font-size: .6rem;
         text-transform: uppercase;
         color: purple;
     }
