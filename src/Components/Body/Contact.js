@@ -13,7 +13,7 @@ const lastImage = trending.slice(-1)[0];
 
 const About = () => {
 // Handlel copies
-    const [copy, setCopied] = useState(false)
+   // const [copy, setCopied] = useState(false)
     const [copy1, setCopied1] = useState(false)
     const [copy2, setCopied2] = useState(false)
 // Ends here
@@ -21,18 +21,32 @@ const About = () => {
 // number contacts
     const number = "+2349156084052"
     const number1 = "08090743834"
-    const contact = [
-        {number: "+2349156084052"},
-        {number2: "08090743834"}
+    const [copied, setCopied] = useState(false); 
+    const contacts = 
+    [
+        {
+        number: "+2349156084052",
+        number2: "08090743834",
+        email: 'staugustinechaplaincy.com',
+        Address: 'Campus 3 Rectors village'
+        }
     ]
-// ends here 
+// ends here
+
 
 // Event handlers (onclick one) starts here 
-    const handleCopy = (num) => {
-       navigator.clipboard.writeText(num)
+    const handleCopy = (contactCopy) => {
+       navigator.clipboard.writeText(contactCopy);
        setCopied(true);
-       setTimeout(() => setCopied(false), 1500);
-    }
+
+       setTimeout(()=> {
+       setCopied(false)
+       },2000);
+
+    //    setCopied(true);
+    //    setTimeout(() => setCopied(false), 1500);
+    };
+
     const handleCopy1 = (num) => {
         navigator.clipboard.writeText(num)
         setCopied1(true);
@@ -54,6 +68,7 @@ const About = () => {
     return(
         <div className='container contact__us'>
            <h2 className='contact__h2'>Contact Us</h2>
+           <div className='copiedButton'><button>{copied && 'copied'}</button></div>
            <div className='row container2 contact__container'>
             <div className='cont__image cont__heading'>
                 <h3> ST. Augustine Catholic Chaplaincy IMT</h3>
@@ -61,10 +76,32 @@ const About = () => {
                To the best of my knowledge, these rules have been followed.
              There are no commercial interests in this study, the findings 
                </p>
-                <div className='contact_cont'>
+                {/* <div className='contact_cont'>
                     <div className='contacts'><SettingsPhoneIcon /><code className='cont__num'>{" "} {number} </code> <button onClick={ (e) => handleCopy(number)}>copy</button> <span className='copied' style={{marginLeft: "1rem", fontWeight:"600", color: "purple"} }>{ copy && "copied!"}</span></div> 
                     <div className='contacts'><SettingsPhoneIcon /><code className='cont__num'>{" "} {number1} </code> <button onClick={ (e) => handleCopy1(number1)}>copy</button> <span style={{marginLeft: "1rem", fontWeight:"600", color: "purple"} }>{copy1 && "copied!"}</span></div> 
                     <div className='contacts'><EmailIcon /><code className='cont__num'>staugustine.com</code> <button>copy</button></div> 
+                </div> */}
+                <div className='contact_cont'>
+                    {contacts.map((contact, index) =>
+                        <>
+                       
+                        <div className='contacts'>
+                            <code className="cont__num">{contact.number}</code>
+                            <button onClick={() => handleCopy(contact.number)}>copy</button>
+                        </div>
+                        <div className='contacts'>
+                            {contact.number2}
+                            <button onClick={() => handleCopy(contact.number2)}>copy</button>
+                        </div>
+                        <div key={index} className='contacts'>
+                            {contact.email}
+                        </div>
+                        <div className='contacts'>
+                            {contact.Address}
+                        </div>
+                        </>
+                    )
+                    }
                 </div>
               
             </div>
@@ -72,6 +109,7 @@ const About = () => {
                <span><EmailIcon /></span>
                <span><FacebookIcon /></span>
                <span><TwitterIcon /></span>
+
              </div>
            </div>
 
