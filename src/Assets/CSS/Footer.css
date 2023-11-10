@@ -1,6 +1,8 @@
 .footer{
     background-color: rgb(0, 0, 0);
     color: white;
+    z-index: 9999;
+    bottom: 0;
 }
 .footer__cont{
     width: 97%;

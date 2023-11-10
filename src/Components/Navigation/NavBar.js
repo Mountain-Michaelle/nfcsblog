@@ -1,5 +1,5 @@
 import react, {useState} from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Avatar } from '@mui/material';
 import '../../Assets/CSS/NavBar.css';
 import DensitySmallSharpIcon from '@mui/icons-material/DensitySmallSharp';
@@ -14,21 +14,29 @@ const NavBar = () => {
     const navLink  = [
     {
      title: 'About',
-     path: '/About'
+     path: './About'
     },
     {
     title: 'Contact',
-    path: '/Contact'
+    path: './Contact'
     },
     {
     title: 'Donate',
-    path: '/Donate'
+    path: './Donate'
     },
     {
     title: <span className='login'>{!isOpen ? <Avatar /> : "Login" }</span> ,
     path: './Login'
     },
 ]
+
+    const navigate = useNavigate()
+
+
+    const handleClick = (path) => {
+        navigate(`/${path}`)
+        setIsOpen(false)
+    }
     return(
         <nav className='navigation'>
           <Link to="./"><h2>St. Augustine Chaplaincy IMT</h2></Link>  
@@ -62,7 +70,7 @@ const NavBar = () => {
                                 return(
                                 <>
                                     <li  key={index}>
-                                        <Link to={nav.path}>{nav.title}</Link> 
+                                        <a onClick={ () => handleClick(nav.path)}>{nav.title}</a> 
                                     </li>
                                 </>
                             )
