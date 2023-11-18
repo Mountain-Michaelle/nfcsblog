@@ -68,6 +68,9 @@
 
 
 @media screen and (max-width: 700px){
+    .logout_btn{
+        margin-bottom: 1rem;
+    }
     .navigation a {
         font-size: .6rem;
         text-transform: uppercase;
@@ -142,16 +145,35 @@
     }
 }
 
+.logout_btn{
+    color: red;
+    font-size: .74rem;
+    font-weight: 600;
+    border: none;
+    text-transform: uppercase;
+    padding: 0 5px 0 0;
+    z-index: 9999;
+    background-color: var(--nfcs-bg);
+
+
+}
+
 @media screen and (max-width: 900px){
     .navLinks ul{
         gap: 1.5rem;
         font-size: 1.2rem;
     }
+    
 }
 @media screen and (max-width: 400px){
     .dropdown{
         margin: 4rem auto;
     }
+    .logout_btn{
+        z-index: 9999;
+    }
+    
+ 
 }
 @media screen and (max-width: 393px){
     .dropdown{

@@ -1,5 +1,5 @@
 .footer{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(8, 0, 10);
     color: white;
     z-index: 9999;
     bottom: 0;
@@ -23,6 +23,8 @@
     font-size: 1rem;
     font-weight: 500;
     list-style: none;
+    color: rgb(235, 185, 245);
+    cursor: pointer
 }
 .footer__cont2{
     display: flex;
@@ -32,4 +34,69 @@
     justify-content: space-between;
     color: rgb(234, 206, 243);
     padding: .5rem;
+}
+
+.footer__cont2 article{
+    font-size: .9rem;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.footer__icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1.2rem;
+}
+
+.footer__icons .MuiSvgIcon-root{
+    color: orange;
+    font-size: 1.8rem;
+}
+.footer__icons .MuiSvgIcon-root:hover{
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    color: rgb(240, 255, 103);
+}
+.bottom{
+    background-color: rgb(36, 32, 37);
+    bottom: 0;
+}
+
+.bottom p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+    text-transform: lowercase;
+    color: rgb(183, 165, 184);
+    letter-spacing: 2px;
+    padding-bottom: 2.5px;
+    padding-left: 2px;
+
+}
+.bottom p .MuiSvgIcon-root{
+    font-size: .8rem;
+    color:white;
+}
+.code__bottom{
+    width: 100%;
+    font-size: .7rem;
+    text-align: right;
+}
+.code__bottom code{
+    color: rgb(126, 121, 126);
+    padding-right: .6rem;
+}
+
+@media screen and (max-width: 500px){
+    .bottom p .MuiSvgIcon-root{
+        font-size: .9rem;
+    }
+    .bottom p{
+        font-size: 10px !important;
+        padding-left: 5px;
+        letter-spacing: 0;
+        line-height: .5rem;
+
+    }
 }

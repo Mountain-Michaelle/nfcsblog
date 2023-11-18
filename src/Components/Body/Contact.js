@@ -114,7 +114,7 @@ const About = () => {
            </div>
 
            <div className='about__more'>
-            <Button >Send Us Message</Button>
+            <Button >Message Us</Button>
            </div>
         </div>
     )

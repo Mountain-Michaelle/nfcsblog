@@ -91,6 +91,11 @@
     
 }
 
+.cont__icon .MuiSvgIcon-root{
+    color: rgb(123, 0, 134);
+    font-size: 2rem;
+}
+
 .contact_cont{
     display: flex;
     flex-direction: column;
@@ -120,6 +125,16 @@
     border-radius: 10px;
 }
 
+
+.about__more .MuiButtonBase-root{
+    background-color: rgb(123, 0, 134);
+    color: white;
+    margin: 0 0 1.5rem 3rem;
+}
+.about__more .MuiButtonBase-root:hover{
+    color: var(--nfcs-text);
+    background: rgb(238, 209, 241);
+}
 
 @media screen and (max-width: 500px){
     .copiedButton{

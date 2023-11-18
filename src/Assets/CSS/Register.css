@@ -82,6 +82,14 @@
     text-decoration: none;
 }
 
+.register__card form .errorMsg{
+    color: red;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: .9rem;
+    margin-left: 2rem;
+}
 
 @media screen and (max-width: 800px){
     .register__card{

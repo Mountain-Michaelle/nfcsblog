@@ -43,16 +43,6 @@
     color: var(--nfcs-text)
 }
 
-.about__more .MuiButtonBase-root{
-    background-color: rgb(123, 0, 134);
-    color: white;
-    margin: 0 0 1.5rem 1.5rem;
-}
-.about__more .MuiButtonBase-root:hover{
-    color: var(--nfcs-text);
-    background: rgb(238, 209, 241);
-}
-
 @media screen and (max-width: 700px){
     .about__us{
         display: flex;
