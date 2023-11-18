@@ -68,7 +68,7 @@ const About = () => {
     return(
         <div className='container contact__us'>
            <h2 className='contact__h2'>Contact Us</h2>
-           <div className='copiedButton'><button>{copied && 'copied'}</button></div>
+           {copied && <div className='copiedButton'>  <button>'copied'</button></div>}
            <div className='row container2 contact__container'>
             <div className='cont__image cont__heading'>
                 <h3> ST. Augustine Catholic Chaplaincy IMT</h3>
