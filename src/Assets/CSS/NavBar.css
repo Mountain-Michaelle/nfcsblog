@@ -8,6 +8,7 @@
     color: var(--nfcs-txt);
     padding: 1rem .5rem .3rem .5rem;
     z-index: 9999;
+    
 }
 
 .navigation a{

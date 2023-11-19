@@ -55,7 +55,8 @@ function Register() {
 
     }
   return (
-    <div className="Register">
+    <div className='AuthRegister'>
+       <div className="Register">
         <div className='register__card'>
             <h3> Create NFCS Account</h3>
 
@@ -97,7 +98,9 @@ function Register() {
                 <p>Already Regisered? <Link to="/Login">Login here</Link></p>
             </form>
         </div>
+    </div> 
     </div>
+    
   )
 }
 

@@ -22,7 +22,6 @@ function App() {
               <Route element={() => 404} /> 
         </Routes>
         </Layout>
-        <Footer />
       </div>
   </Provider>
   );

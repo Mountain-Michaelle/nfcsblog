@@ -36,6 +36,7 @@ function Login({login, isAuthenticated}) {
 
  console.log("How far ", isAuthenticated)
   return (
+    <div className='AuthLogin'>
     <div className='Login'>
         <div className='login_card'>
                 <h3>Welcome Back!</h3>
@@ -51,9 +52,12 @@ function Login({login, isAuthenticated}) {
                 />
                 <Button disable={disable && processing} type="submit" className='login__button'>{processing ? "logging..." : "login"}</Button>
                 <p>Don't have NFCS acount yet? <Link to='/Register'>Register here</Link></p>
+                <Link>Forgotten Password? </Link>
             </form>
         </div>
     </div>
+    </div>
+    
   )
 }
 const mapStateToProps = state => ({

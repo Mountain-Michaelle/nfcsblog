@@ -45,6 +45,8 @@ const bg = {
     const pixel = 2;
     console.log("single home post ", lastFeatured)
     return(
+        <>
+        
         <section className='container home' style={{}}>
             <div className='row'>
                 <h2>Featured Post</h2>
@@ -64,6 +66,8 @@ const bg = {
             </section>
             </div>
         </section>
+        <Footer />
+        </>
         )
     }
 export default Home;
