@@ -9,6 +9,7 @@ import Footer from './Components/Footer/Footer';
 import {Provider} from 'react-redux';
 import store from './Components/Body/store';
 import Layout from './Components/HOC/Layout';
+import PasswordResetRequest from './Components/Body/Requests/PasswordResetRequest';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
               <Route path="/" element={<Feed />} />
               <Route path="/:page" element={<Renderer />} />
               <Route element={() => 404} /> 
+
+              {/** Password Resetting */}
+              <Route path="passwordresetrequest" element={<PasswordResetRequest />} />
         </Routes>
         </Layout>
       </div>
